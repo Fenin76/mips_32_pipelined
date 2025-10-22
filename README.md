@@ -43,6 +43,26 @@ The processor implements the classic MIPS 5-stage pipeline:
 - **Data Hazards**: Resolved through forwarding or stalling
 - **Control Hazards**: Handled by flushing pipeline on branch
 
+## Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/Fenin76/mips_32_pipelined.git
+cd mips_32_pipelined
+
+# Run the interactive demo
+python demo.py
+
+# Run tests
+python tests/test_alu.py
+python tests/test_register_file.py
+python tests/test_processor.py
+
+# Run examples
+python examples/fibonacci.py
+python examples/array_sum.py
+```
+
 ## Installation
 
 No external dependencies required! Just Python 3.6+
