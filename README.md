@@ -81,6 +81,18 @@ regs = processor.get_register_state()
 print(f"Result: $t2 = {regs[REGISTERS['t2']]}")  # Should be 30
 ```
 
+### Running the Demo
+
+```bash
+python demo.py
+```
+
+This interactive demo showcases:
+- Basic arithmetic operations
+- Memory load/store operations  
+- Conditional branching
+- Data forwarding in action
+
 ### Running Tests
 
 ```bash
