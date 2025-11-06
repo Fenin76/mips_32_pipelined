@@ -14,7 +14,7 @@ input [WIDTH-1:0] i_input;
 
 output reg [WIDTH-1:0] o_output;
 
-always_ff @ (posedge i_clk) begin
+	always_ff @ (posedge i_clk or posedge i_reset) begin
    if (i_reset) begin
 	o_output <= 'b0;
    end else begin
